@@ -1,0 +1,36 @@
+.products--main{
+
+    h2{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+        color: #EC018C;
+    }
+    .products--main__flex{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        .products__article{
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+            min-width: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h4{
+                font-size: 1.3rem;
+                color: #00ADEC;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 8px;
+                background-color: #EC018C;
+            }
+        }
+    }
+}

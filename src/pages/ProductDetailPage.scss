@@ -1,0 +1,19 @@
+.productDetail--main{
+    
+    .productDetail--box{
+        text-align: center;
+        border: 10px solid #00ADEC;
+        display: block;
+        width: 600px;
+        margin: 50px auto;
+
+        h2{
+            margin-top: 50px;
+            font-size: 3rem;
+            color: #EC018C;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+}

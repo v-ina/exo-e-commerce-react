@@ -1,0 +1,32 @@
+.home--main{
+
+    h2{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+        color: #EC018C;
+    }
+
+    .home--main__flex{
+        display: flex;
+        justify-content: space-evenly;
+    
+        .product__box{
+            border: 1px solid black;
+            width: 20%;
+            text-align: center;
+            padding: 30px;
+
+            h4{
+                font-size: 1.3rem;
+                color: #00ADEC;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                padding: 8px;
+                background-color: #EC018C;
+            }
+        }
+    }
+}
