@@ -2,8 +2,11 @@ import './HomePage.scss'
 import Header from '../components/Header'
 import {Link} from 'react-router-dom'
 import { products, sortedByPrice } from '../utils/utils'
+import Sidebar from '../components/Sidebar'
 
 function HomePage(){
+
+
 
   const sortedByDate = products.sort((producta,productb)=>{
     return new Date(producta.publicationDate) - new Date(productb.publicationDate);
@@ -19,7 +22,7 @@ function HomePage(){
   return(
     <>
       <Header isLogoDisplayed={true} pageTitle={"on est a l'accueil"}/>
-
+      <Sidebar currentPage={"HomePage"}/>
       <main className='home--main'>
         <h2>Les plus recents! - cuisine</h2>
         <div className='home--main__flex'>

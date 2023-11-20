@@ -2,6 +2,7 @@ import './ProductDetailPage.scss'
 import Header from '../components/Header'
 import {useParams} from 'react-router-dom'
 import { products } from '../utils/utils'
+import Sidebar from '../components/Sidebar'
 
 function ProductDetailPage(){
 
@@ -17,6 +18,7 @@ function ProductDetailPage(){
   return(
     <>
       <Header isLogoDisplayed={false} pageTitle={"on est a page detail de produit"} />
+      <Sidebar currentPage={"productDetailPage"} text={productDetail.title}/>
       <main className='productDetail--main'>
         <div className='productDetail--box'>
           <h2>{productDetail.title}</h2>
