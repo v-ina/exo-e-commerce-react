@@ -80,7 +80,15 @@ export const products = [
     },
   ];
 
-  
+
 export const sortedByPrice = products.sort((producta,productb)=>{
     return producta.price - productb.price
   })
+
+/*
+  props의 콘셉은 대충 이런거임.
+export const sortedBy = (sortProductsBy)=>{
+    return products.sort((product1,product2)=>product1.sortProductsBy - product2.sortProductsBy)
+}
+ 그리고 다른 페이지에서 부를 때 sortedBy(price), sortedBy(pubalicationDate)이런식으로 다양하게 사용가능
+*/

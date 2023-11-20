@@ -11,10 +11,15 @@ function HomePage(){
   const theNewestProducts = sortedByDate.slice(-3)
   
   const theCheapestProducts = sortedByPrice.slice(0,3)
+
+
+
+
  
   return(
     <>
-      <Header />
+      <Header isLogoDisplayed={true} pageTitle={"on est a l'accueil"}/>
+
       <main className='home--main'>
         <h2>Les plus recents! - cuisine</h2>
         <div className='home--main__flex'>

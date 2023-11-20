@@ -7,7 +7,11 @@ function ProductPage(){
     
   return(
     <>
-      <Header />
+      <Header isLogoDisplayed={true} pageTitle={"on est a page de tout nos produit"}/>
+      {/* a chaque page, quand j'apelle mon fonciont Header, je mes parametre comme je veux */}
+      {/* ici, je veux afficher logo, donc true pour mon fonction qui s'appelle isLogoDisplayed, */}
+      {/* et "on est a pagae de tout nos produit" pour le fonction pageTitle */}
+      
       <main className='products--main'>
         <h2>nos products</h2>
         <div className='products--main__flex'>

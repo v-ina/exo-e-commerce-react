@@ -16,7 +16,7 @@ function ProductDetailPage(){
 
   return(
     <>
-      <Header />
+      <Header isLogoDisplayed={false} pageTitle={"on est a page detail de produit"} />
       <main className='productDetail--main'>
         <div className='productDetail--box'>
           <h2>{productDetail.title}</h2>
