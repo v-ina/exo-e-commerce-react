@@ -86,8 +86,8 @@ function ProductPage(){
     },
   ];
     
-  const sortedByPrice = products.sort((a,b)=>{
-    return a.price - b.price
+  const sortedByPrice = products.sort((producta,productb)=>{
+    return producta.price - productb.price
   })
 
   return(

@@ -86,13 +86,13 @@ function HomePage(){
     },
   ];
 
-  const sortedByDate = products.sort((a,b)=>{
-    return new Date(a.publicationDate) - new Date(b.publicationDate);
+  const sortedByDate = products.sort((producta,productb)=>{
+    return new Date(producta.publicationDate) - new Date(productb.publicationDate);
   })
   const theNewestProducts = sortedByDate.slice(-3)
   
-  const sortedByPrice = products.sort((a,b)=>{
-    return a.price - b.price
+  const sortedByPrice = products.sort((producta,productb)=>{
+    return producta.price - productb.price
   })
   const theCheapestProducts = sortedByPrice.slice(0,3)
  

@@ -86,6 +86,10 @@ function ProductDetailPage(){
     },
   ];
 
+  // en utilisant parametre(:), on va connecter avec id de chaque produit.
+  // dans le tableau products, il va chercher un id qui concerne de parametre d'url.
+  // et j'ai cree des elements html
+
   const {productId} = useParams()
   const productDetail = products.find(product=>{
     return product.id == productId
