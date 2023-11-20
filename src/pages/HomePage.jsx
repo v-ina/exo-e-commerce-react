@@ -6,18 +6,12 @@ import Sidebar from '../components/Sidebar'
 
 function HomePage(){
 
-
-
   const sortedByDate = products.sort((producta,productb)=>{
     return new Date(producta.publicationDate) - new Date(productb.publicationDate);
   })
   const theNewestProducts = sortedByDate.slice(-3)
   
   const theCheapestProducts = sortedByPrice.slice(0,3)
-
-
-
-
  
   return(
     <>

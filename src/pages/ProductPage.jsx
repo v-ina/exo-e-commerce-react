@@ -5,7 +5,6 @@ import {sortedByPrice } from '../utils/utils'
 import Sidebar from '../components/Sidebar'
 
 function ProductPage(){
-  
 
   return(
     <>
@@ -25,9 +24,7 @@ function ProductPage(){
                 <p>€ {product.price}</p>
                 <p>category : {product.category? product.category : `none`}</p>
                 <Link to={`/product/${product.id}/details`}>voir le plus</Link>
-
               </article>
-
             )
           })}
           </div>
