@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import {Link} from 'react-router-dom'
 import { products, sortedByPrice } from '../utils/utils'
 import Sidebar from '../components/Sidebar'
+import ProductCard from '../components/ProductCard'
 
 function HomePage(){
 
@@ -21,27 +22,18 @@ function HomePage(){
         <h2>Les plus recents! - cuisine</h2>
         <div className='home--main__flex'>
           {theNewestProducts.map(product=>{
-            return(
-              <div className='product__box'>
-                <h4>{product.title}</h4>
-                <p>date : {product.publicationDate}</p>
-                <p>€ {product.price}</p>
-                <Link to={`/product/${product.id}/details`}>voir le detail</Link>
-              </div>
-            )
+            return <ProductCard productprops={product}/>
           })}
         </div>
           
+{/* ici, dans les boucles 3 produits plus recents et moins chers, chaque element de boucle
+va etre recupere à composant ProductCard et remplir ce composant */}
+
+
         <h2>Les moins chers!</h2>
         <div className='home--main__flex'>
           {theCheapestProducts.map(product =>{
-            return(
-              <div className='product__box'>
-                <h4>{product.title}</h4>
-                <p>€ {product.price}</p>
-                <Link to={`/product/${product.id}/details`}>voir le detail</Link>
-              </div>
-            )
+            return <ProductCard productprops={product} />
           })}   
         </div>
       </main>

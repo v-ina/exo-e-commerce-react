@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import {Link} from 'react-router-dom'
 import {sortedByPrice } from '../utils/utils'
 import Sidebar from '../components/Sidebar'
+import ProductCard from '../components/ProductCard'
 
 function ProductPage(){
 
@@ -18,14 +19,7 @@ function ProductPage(){
         <h2>nos products</h2>
         <div className='products--main__flex'>
           {sortedByPrice.map(product=>{
-            return(
-              <article className='products__article'>
-                <h4>{product.title}</h4>
-                <p>€ {product.price}</p>
-                <p>category : {product.category? product.category : `none`}</p>
-                <Link to={`/product/${product.id}/details`}>voir le plus</Link>
-              </article>
-            )
+            return <ProductCard productprops={product} />
           })}
           </div>
       </main>
